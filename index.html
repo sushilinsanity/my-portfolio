@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sushil Mangal | Web Developer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <nav id="main-nav">
+        <div class="container">
+          <div id="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 226 226" style=" fill:#000000;">
+              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""  stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,226v-226h226v226z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path d="M72.32,18.08c-20.14564,0 -36.87049,14.72877 -40.07969,33.97945c4.407,-6.01612 10.10319,-11.02725 16.72047,-14.56641c5.79012,-6.35512 14.10226,-10.37305 23.35922,-10.37305h108.48v-9.04zM72.32,40.68c-22.42824,0 -40.68,18.24724 -40.68,40.68c0,22.43276 18.25176,40.68 40.68,40.68h74.58c21.18524,0 38.42,17.23476 38.42,38.42c0,21.18524 -17.23476,38.42 -38.42,38.42h-115.26v9.04h115.26c26.1708,0 47.46,-21.2892 47.46,-47.46c0,-26.1708 -21.2892,-47.46 -47.46,-47.46h-74.58c-17.4472,0 -31.64,-14.19732 -31.64,-31.64c0,-17.44268 14.1928,-31.64 31.64,-31.64h108.48v-9.04zM49.76414,80.90977c-0.00452,0.14916 -0.04414,0.29655 -0.04414,0.45023c0,5.3336 1.93131,10.17643 5.03203,14.04555c5.32456,2.56284 11.27161,4.03445 17.56797,4.03445h74.58c10.84348,0 20.63076,4.53547 27.6232,11.78555c7.53484,4.24428 14.01038,10.15397 18.90102,17.24133c-4.37536,-21.68244 -23.57166,-38.06687 -46.52422,-38.06687h-74.58c-8.82756,0 -16.81094,-3.64587 -22.55586,-9.49023zM176.16523,162.69352c-7.0512,8.29872 -17.54487,13.58648 -29.26523,13.58648h-115.26v9.04h115.26c7.9552,0 15.4317,-1.99756 22.01734,-5.47344c4.10416,-4.6556 6.75521,-10.59904 7.24789,-17.15304z"></path>
+                </g>
+              </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 226 226" style=" fill:#000000;">
+              <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <path d="M0,226v-226h226v226z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path d="M21.1875,17.65625c-3.90203,0 -7.0625,3.16047 -7.0625,7.0625v180.09375c0,3.90203 3.16047,7.0625 7.0625,7.0625h14.125c3.90203,0 7.0625,-3.16047 7.0625,-7.0625v-116.88989l55.71375,121.61432c1.79388,3.91263 5.57877,6.34521 9.88336,6.34521c4.31519,0 8.11371,-2.44252 9.90405,-6.3728l55.15509,-121.18671v116.48987c0,3.90203 3.16047,7.0625 7.0625,7.0625h28.25c3.90203,0 7.0625,-3.16047 7.0625,-7.0625v-180.09375c0,-3.90203 -3.16047,-7.0625 -7.0625,-7.0625h-28.25c-3.62659,0 -6.61166,2.7349 -7.01422,6.25555l-58.30011,128.10437l-59.67261,-130.23553c-1.14766,-2.51072 -3.65965,-4.12439 -6.42108,-4.12439h-13.37323zM73.20447,18.62183c-0.45824,0.01457 -0.91642,0.11333 -1.3587,0.31726l-6.41418,2.9588c-1.77269,0.81925 -2.55039,2.92079 -1.73114,4.68994c0.81925,1.76916 2.92079,2.53996 4.68994,1.72424l6.41418,-2.9588c1.76916,-0.81925 2.53996,-2.91389 1.72424,-4.68304c-0.61444,-1.32687 -1.94963,-2.0921 -3.32434,-2.0484zM21.1875,24.71875h14.125h13.37323l63.21765,137.98084c0.565,1.23241 1.72468,1.85528 2.88293,1.85528c1.16178,0 2.32147,-0.62271 2.88294,-1.86218l62.4245,-137.1532v-0.82074h28.25v180.09375h-28.25v-124.63519c0,-3.34409 -2.67167,-5.30377 -5.35895,-5.30377c-1.88922,0 -3.78782,0.9775 -4.75891,3.11743l-58.52771,128.60095c-0.678,1.48666 -2.07433,2.22772 -3.46918,2.22772c-1.39131,0 -2.78428,-0.7377 -3.46228,-2.22083l-59.09326,-128.97339c-0.97816,-2.13287 -2.86633,-3.09674 -4.75201,-3.09674c-2.68728,0 -5.35895,1.96321 -5.35895,5.30377v124.98004h-14.125zM80.61182,34.65039c-0.45851,0.01457 -0.92331,0.12023 -1.3656,0.32416l-6.41418,2.9588c-1.77269,0.81572 -2.53996,2.91035 -1.72424,4.68304c0.81925,1.76916 2.91389,2.54686 4.68304,1.73114l6.41418,-2.9588c1.76916,-0.81925 2.53996,-2.92079 1.72424,-4.68994c-0.61179,-1.32687 -1.94191,-2.0921 -3.31744,-2.0484zM194.21875,38.84375c-1.95278,0 -3.53125,1.57847 -3.53125,3.53125v14.125c0,1.95278 1.57847,3.53125 3.53125,3.53125c1.95278,0 3.53125,-1.57847 3.53125,-3.53125v-14.125c0,-1.95278 -1.57847,-3.53125 -3.53125,-3.53125zM88.01227,50.67895c-0.45824,0.01457 -0.92331,0.12023 -1.3656,0.32416l-6.41418,2.9588c-1.76916,0.81925 -2.53996,2.91389 -1.72424,4.68304c0.81925,1.76916 2.91389,2.54686 4.68304,1.73114l6.41418,-2.9588c1.76916,-0.81925 2.53996,-2.92079 1.72424,-4.68994c-0.61444,-1.32687 -1.94274,-2.0921 -3.31744,-2.0484zM95.41272,66.70752c-0.45823,0.01457 -0.91641,0.12023 -1.3587,0.32416l-6.41419,2.9588c-1.77269,0.81572 -2.55039,2.91726 -1.73114,4.68994c0.81925,1.76916 2.92079,2.53996 4.68994,1.72424l6.41418,-2.9588c1.76916,-0.81925 2.53996,-2.91389 1.72425,-4.68304c-0.61444,-1.32687 -1.94964,-2.099 -3.32434,-2.0553zM194.21875,67.09375c-1.95278,0 -3.53125,1.57847 -3.53125,3.53125v28.25c0,1.95278 1.57847,3.53125 3.53125,3.53125c1.95278,0 3.53125,-1.57847 3.53125,-3.53125v-28.25c0,-1.95278 -1.57847,-3.53125 -3.53125,-3.53125zM102.82007,82.73609c-0.45851,0.01456 -0.92331,0.12022 -1.3656,0.32415l-6.41419,2.9588c-1.77269,0.81572 -2.54349,2.91725 -1.72424,4.68994c0.81925,1.76916 2.91389,2.53996 4.68304,1.72424l6.41418,-2.9588c1.76916,-0.81925 2.53996,-2.91389 1.72425,-4.68304c-0.61179,-1.32687 -1.94191,-2.099 -3.31744,-2.0553zM110.22052,98.76465c-0.45824,0.01457 -0.92331,0.12023 -1.3656,0.32416l-6.41418,2.9588c-1.77269,0.81925 -2.53996,2.92078 -1.72425,4.68994c0.81925,1.76916 2.91389,2.53996 4.68304,1.72425l6.41418,-2.9588c1.76916,-0.81925 2.53996,-2.91389 1.72425,-4.68304c-0.61444,-1.32687 -1.94274,-2.099 -3.31744,-2.0553zM117.62097,114.80011c-0.45851,0.01457 -0.92331,0.12023 -1.3656,0.32415l-6.41418,2.9588c-1.76916,0.81572 -2.53996,2.91036 -1.72424,4.68304c0.81925,1.76916 2.91389,2.54686 4.68304,1.73114l6.41419,-2.9588c1.76916,-0.81925 2.53996,-2.92079 1.72424,-4.68994c-0.61179,-1.32687 -1.94191,-2.0921 -3.31744,-2.0484z"></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <ul>
+            <li><a href="#header-home" class="current">Home</a></li>
+            <li><a href="#work-a">Work</a></li>
+            <li><a href="#about-a">About</a></li>
+            <li><a href="#contact-a">Contact</a></li>
+          </ul>
+        </div>
+        </nav>
+      <div class="container">
+        <div class="header-content">
+          <h1>
+            Creative UI/UX and Web Developer
+            <!-- <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Web Developer", "Coder"]'
+            ></span> -->
+          </h1>
+          <p class="lead">
+            I specialize in UI developement, Web applications and Mobile apps 
+          </p>
+          <a href="#work-a" class="btn-light">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section A: Specialize -->
+    <section id="home-a" class="main-section text-center py-2">
+      <div class="container">
+        <h2 class="section-title">I Specialize In</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          UI developent as well as creating beautiful looking websites and mobile applications
+        </p>
+      </div>
+    </section>
+
+    <!-- Section B: Stats -->
+    <section id="home-b" class="text-center py-2">
+      <div class="container">
+        <div>
+          <ul>
+            <li><i class="fas fa-user fa-3x"></i></li>
+            <li class="stats-title">Experience (years)</li>
+            <li class="stats-number">4+</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-award fa-3x"></i></li>
+            <li class="stats-title">Awards</li>
+            <li class="stats-number">3</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-code-branch fa-3x"></i></li>
+            <li class="stats-title">Projects Completed</li>
+            <li class="stats-number">20+</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Process -->
+    <section id="home-c" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">
+          My Developement Process
+        </h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          All of my UI projects are based off of a practiced formula to get the result that I am looking for
+        </p>
+        <div class="process">
+          <div>
+            <i class="fas fa-file-alt fa-4x process-icon my-2">
+              <div class="process-step">1</div>
+            </i>
+            <h3>Discuss The Project</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-chalkboard-teacher fa-4x process-icon my-2">
+              <div class="process-step">2</div>
+            </i>
+            <h3>Brainstorming ^ Concept</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-object-ungroup fa-4x process-icon my-2">
+              <div class="process-step">3</div>
+            </i>
+            <h3>UI Planning</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-keyboard fa-4x process-icon my-2">
+              <div class="process-step">4</div>
+            </i>
+            <h3>Developement</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-thumbs-up fa-4x process-icon my-2">
+              <div class="process-step">5</div>
+            </i>
+            <h3>Interaction</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas laborum repellendus dolorum! Harum, cupiditate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section A: Gallery -->
+    <section id="work-a" class="main-section text-center py-3">
+      <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Check out some of my projects
+        </p>
+        <div class="items">
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item1.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Design</p>
+                <h2 class="item-text-title">Great Gradients</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item2.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">UI/UX</p>
+                <h2 class="item-text-title">World Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item3.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Photography & Design</p>
+                <h2 class="item-text-title">Vanishing</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item4.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Design</p>
+                <h2 class="item-text-title">Gap INC</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item5.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Mobile UI Design</p>
+                <h2 class="item-text-title">Face THe Experience</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item6.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Design Concept</p>
+                <h2 class="item-text-title">Bezier Curves</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item7.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Photography</p>
+                <h2 class="item-text-title">Dock Ponder</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item8.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Web Applications</p>
+                <h2 class="item-text-title">Restaurant App</h2>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item9.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Social Network Concept</p>
+                <h2 class="item-text-title">FriendFeed</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Section A: Info -->
+     <section id="about-a" class="main-section text-center py-3">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">
+          Let me tell you a little about myself and what I do...
+        </p>
+        <div class="about-info">
+          <img src="img/about.jpg" alt="" class="bio-image" />
+          <div class="bio bg-light">
+            <h4>Your Project Is In Safe Hands</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
+              nesciunt unde nihil voluptatum commodi consequuntur molestiae?
+              Fugiat, perspiciatis reprehenderit. Architecto delectus vitae
+              deserunt!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B: Progress Bars -->
+    <section id="about-b" class="bg-dark py-3">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="bottom-line"></div>
+        <h4>HTML, CSS, Bootstrap:</h4>
+        <div class="progress">
+          <div style="width:100%"></div>
+        </div>
+        <h4>Angular:</h4>
+        <div class="progress">
+          <div style="width:100%"></div>
+        </div>
+        <h4>React:</h4>
+        <div class="progress">
+          <div style="width:80%"></div>
+        </div>
+        <h4>React Native:</h4>
+        <div class="progress">
+          <div style="width:70%"></div>
+        </div>
+        <h4>Google Maps:</h4>
+        <div class="progress">
+          <div style="width:80%"></div>
+        </div>
+        <h4>Node:</h4>
+        <div class="progress">
+          <div style="width:70%"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Logos -->
+    <section id="about-c" class="py-4 bg-light">
+      <div class="container">
+        <div class="about-logos">
+          <img src="https://brandslogos.com/wp-content/uploads/images/large/angular-logo-1.png" alt="" />
+          <img src="https://braze-marketing-assets.s3.amazonaws.com/images/partner_logos/react-native.png" alt="" />
+          <img src="https://www.freepngimg.com/thumb/google/66964-google-platform-maps-suite-logo-cloud.png" alt="" />
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png" alt="" />
+          <img src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/express-routing-logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D: Testimonials -->
+    <section id="about-d" class="py-4">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="bottom-line"></div>
+        <p class="lead text-center">Take a look at what my clients say...</p>
+        <div class="testimonials">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
+              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
+              sint? Non, fugit!
+            </p>
+            <ul>
+              <li><img src="img/testimonials//person1.jpg" alt="" /></li>
+              <li>Sam Smith, New York</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
+              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
+              sint? Non, fugit!
+            </p>
+            <ul>
+              <li><img src="img/testimonials//person2.jpg" alt="" /></li>
+              <li>Sara Williams, Michigan</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
+              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
+              sint? Non, fugit!
+            </p>
+            <ul>
+              <li><img src="img/testimonials//person3.jpg" alt="" /></li>
+              <li>Jill Johnson, London</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates officiis quia nostrum nam ab vel laudantium, ea,
+              corrupti culpa illum soluta ipsam eos, eius ad error voluptate
+              sint? Non, fugit!
+            </p>
+            <ul>
+              <li><img src="img/testimonials//person4.jpg" alt="" /></li>
+              <li>Steve Thompson, Boston</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="main-section text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+            />
+            <input
+              type="text"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>sushilmangal731@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>(+91) 8567-979-075</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>Punjab, India IN</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
+      <div class="container">
+        <h1>Let's Start Your Next Project</h1>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2021. All Rights Reserved</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      const menubar = document.getElementById('main-nav')
+      let scrolled = false
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          menubar.classList.remove('top')
+          if (!scrolled) {
+            menubar.style.transform = 'translateY(-70px)'
+          }
+          setTimeout(function () {
+            menubar.style.transform = 'translateY(0)'
+            scrolled = true
+          }, 200)
+        } else {
+          menubar.classList.add('top')
+          scrolled = false
+        }
+      }
+
+      $(document).ready(function() {
+        $('a').bind('click', function(e) {
+          e.preventDefault(); // prevent hard jump, the default behavior
+
+          var target = $(this).attr("href"); // Set the target as variable
+
+          // perform animated scrolling by getting top-position of target-element and set it as scroll target
+          $('html, body').animate({
+              scrollTop: $(target).offset().top - 80
+          }, 600);
+
+          return false;
+        });
+      });
+
+      $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+
+        // Assign active class to nav links while scolling
+        $('.main-section').each(function(i) {
+          if ($(this).position().top - 90 <= scrollDistance) {
+            $('#main-nav a').removeClass('current');
+            $('#main-nav a').eq(i).addClass('current');
+          }
+        });
+      }).scroll();
+    </script>
+  </body>
+</html>
